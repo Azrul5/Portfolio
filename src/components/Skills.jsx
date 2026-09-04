@@ -135,7 +135,7 @@ function Skills() {
         <div className="section-heading">
 
           <span className="section-number">
-            03
+            
           </span>
 
           <div>

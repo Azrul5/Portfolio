@@ -37,7 +37,7 @@ function Services() {
         <div className="section-heading">
 
           <span className="section-number">
-            02
+            
           </span>
 
           <div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +21,7 @@ function Navbar() {
         </a>
 
         <button
+          type="button"
           className={`menu-toggle ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
