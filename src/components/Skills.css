@@ -1,0 +1,927 @@
+/* =========================================================
+   SKILLS SECTION
+   PROFESSIONAL DEVELOPER / TECHNOLOGY BACKGROUND
+   COLORS: WHITE / BLACK / GRAY ONLY
+========================================================= */
+
+.skills-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* =========================================================
+   ANIMATED TECHNOLOGY BACKGROUND
+========================================================= */
+
+.skills-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: -3;
+
+  opacity: 0.55;
+
+  /*
+    Circuit-board style background:
+    - thin horizontal paths
+    - thin vertical paths
+    - small technical nodes
+  */
+
+  background-image:
+
+    /* Horizontal circuit lines */
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 7%,
+      rgba(0, 0, 0, 0.12) 7.1%,
+      rgba(0, 0, 0, 0.12) 7.2%,
+      transparent 7.3%,
+      transparent 18%,
+      rgba(0, 0, 0, 0.08) 18.1%,
+      rgba(0, 0, 0, 0.08) 18.2%,
+      transparent 18.3%,
+      transparent 32%,
+      rgba(0, 0, 0, 0.10) 32.1%,
+      rgba(0, 0, 0, 0.10) 32.2%,
+      transparent 32.3%,
+      transparent 48%,
+      rgba(0, 0, 0, 0.07) 48.1%,
+      rgba(0, 0, 0, 0.07) 48.2%,
+      transparent 48.3%,
+      transparent 64%,
+      rgba(0, 0, 0, 0.10) 64.1%,
+      rgba(0, 0, 0, 0.10) 64.2%,
+      transparent 64.3%,
+      transparent 82%,
+      rgba(0, 0, 0, 0.08) 82.1%,
+      rgba(0, 0, 0, 0.08) 82.2%,
+      transparent 82.3%,
+      transparent
+    ),
+
+    /* Vertical circuit lines */
+    linear-gradient(
+      0deg,
+      transparent 0%,
+      transparent 12%,
+      rgba(0, 0, 0, 0.09) 12.1%,
+      rgba(0, 0, 0, 0.09) 12.2%,
+      transparent 12.3%,
+      transparent 28%,
+      rgba(0, 0, 0, 0.07) 28.1%,
+      rgba(0, 0, 0, 0.07) 28.2%,
+      transparent 28.3%,
+      transparent 45%,
+      rgba(0, 0, 0, 0.10) 45.1%,
+      rgba(0, 0, 0, 0.10) 45.2%,
+      transparent 45.3%,
+      transparent 67%,
+      rgba(0, 0, 0, 0.08) 67.1%,
+      rgba(0, 0, 0, 0.08) 67.2%,
+      transparent 67.3%,
+      transparent 84%,
+      rgba(0, 0, 0, 0.09) 84.1%,
+      rgba(0, 0, 0, 0.09) 84.2%,
+      transparent 84.3%,
+      transparent
+    ),
+
+    /* Small technology nodes */
+    radial-gradient(
+      circle at 7% 12%,
+      #777777 0 2px,
+      transparent 3px
+    ),
+
+    radial-gradient(
+      circle at 18% 28%,
+      #999999 0 2px,
+      transparent 3px
+    ),
+
+    radial-gradient(
+      circle at 32% 45%,
+      #777777 0 2px,
+      transparent 3px
+    ),
+
+    radial-gradient(
+      circle at 48% 67%,
+      #999999 0 2px,
+      transparent 3px
+    ),
+
+    radial-gradient(
+      circle at 64% 32%,
+      #777777 0 2px,
+      transparent 3px
+    ),
+
+    radial-gradient(
+      circle at 82% 84%,
+      #888888 0 2px,
+      transparent 3px
+    );
+
+  background-size:
+    900px 500px,
+    900px 500px,
+    900px 500px,
+    900px 500px,
+    900px 500px,
+    900px 500px,
+    900px 500px,
+    900px 500px;
+
+  animation:
+    circuitMove 18s linear infinite;
+}
+
+
+/* =========================================================
+   CIRCUIT MOVEMENT
+========================================================= */
+
+@keyframes circuitMove {
+
+  0% {
+    background-position:
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0;
+  }
+
+  100% {
+    background-position:
+      180px 90px,
+      -120px 150px,
+      180px 90px,
+      180px 90px,
+      180px 90px,
+      180px 90px,
+      180px 90px,
+      180px 90px;
+  }
+
+}
+
+
+/* =========================================================
+   SOFT TECH GLOW
+========================================================= */
+
+.skills-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: -200px;
+  right: -150px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: -2;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.09) 0%,
+      rgba(0, 0, 0, 0.04) 35%,
+      transparent 70%
+    );
+
+  filter: blur(45px);
+
+  animation:
+    techGlow 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes techGlow {
+
+  0% {
+    transform:
+      translate(0, 0)
+      scale(0.8);
+
+    opacity: 0.4;
+  }
+
+  50% {
+    transform:
+      translate(-180px, 160px)
+      scale(1.1);
+
+    opacity: 0.7;
+  }
+
+  100% {
+    transform:
+      translate(-80px, 320px)
+      scale(0.9);
+
+    opacity: 0.4;
+  }
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.skills-section .section-container {
+  position: relative;
+
+  z-index: 5;
+}
+
+
+/* =========================================================
+   SKILLS GRID
+========================================================= */
+
+.skills-section .skills-grid {
+  position: relative;
+
+  z-index: 10;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  border-top:
+    1px solid rgba(0, 0, 0, 0.12);
+
+  border-left:
+    1px solid rgba(0, 0, 0, 0.12);
+
+  background:
+    rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================================
+   SKILL CARD
+========================================================= */
+
+.skills-section .skill-card {
+  position: relative;
+
+  min-height: 270px;
+
+  padding: 32px;
+
+  background:
+    rgba(255, 255, 255, 0.90);
+
+  border-right:
+    1px solid rgba(0, 0, 0, 0.12);
+
+  border-bottom:
+    1px solid rgba(0, 0, 0, 0.12);
+
+  overflow: hidden;
+
+  backdrop-filter:
+    blur(6px);
+
+  -webkit-backdrop-filter:
+    blur(6px);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.skills-section .skill-card:hover {
+  transform:
+    translateY(-5px);
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 18px 40px
+    rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.skills-section .skill-category {
+  position: relative;
+
+  z-index: 5;
+
+  margin:
+    0 0 30px;
+
+  color:
+    #777777;
+
+  font-family:
+    "DM Mono",
+    "Courier New",
+    monospace;
+
+  font-size:
+    10px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.18em;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+.skills-section .skill-card:hover
+.skill-category {
+  color:
+    #111111;
+}
+
+
+/* =========================================================
+   SKILL LIST
+========================================================= */
+
+.skills-section .skill-list {
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* =========================================================
+   SKILL ITEM
+========================================================= */
+
+.skills-section .skill-item {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  min-height: 30px;
+
+  padding:
+    7px 42px 7px 7px;
+
+  margin-left:
+    -7px;
+
+  border-radius:
+    5px;
+
+  color:
+    #181818;
+
+  font-size:
+    15px;
+
+  font-weight:
+    600;
+
+  cursor:
+    default;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   SKILL ITEM HOVER
+========================================================= */
+
+.skills-section .skill-item:hover {
+  transform:
+    translateX(7px);
+
+  background:
+    rgba(128, 128, 128, 0.10);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.08),
+
+    0 0 18px
+    rgba(128, 128, 128, 0.12);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.skills-section .skill-icon {
+  width:
+    21px;
+
+  height:
+    21px;
+
+  flex-shrink:
+    0;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.skills-section .skill-item:hover
+.skill-icon {
+  transform:
+    scale(1.16);
+
+  filter:
+    drop-shadow(
+      0 4px 8px
+      rgba(0, 0, 0, 0.20)
+    );
+}
+
+
+/* =========================================================
+   TEXT HOVER
+========================================================= */
+
+.skills-section .skill-item span {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.skills-section .skill-item:hover span {
+  transform:
+    translateX(4px);
+
+  color:
+    #000000;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.skills-section .skill-item::after {
+  content:
+    "→";
+
+  position: absolute;
+
+  right:
+    10px;
+
+  top:
+    50%;
+
+  transform:
+    translateY(-50%)
+    translateX(-10px);
+
+  color:
+    #777777;
+
+  font-size:
+    18px;
+
+  opacity:
+    0;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.skills-section .skill-item:hover::after {
+  opacity:
+    1;
+
+  transform:
+    translateY(-50%)
+    translateX(0);
+
+  color:
+    #222222;
+}
+
+
+/* =========================================================
+   ARROW LINE
+========================================================= */
+
+.skills-section .skill-item::before {
+  content:
+    "";
+
+  position: absolute;
+
+  right:
+    31px;
+
+  top:
+    50%;
+
+  width:
+    0;
+
+  height:
+    1px;
+
+  background:
+    #999999;
+
+  transform:
+    translateY(-50%);
+
+  opacity:
+    0;
+
+  transition:
+    width 0.3s ease,
+    opacity 0.3s ease;
+}
+
+
+.skills-section .skill-item:hover::before {
+  width:
+    12px;
+
+  opacity:
+    0.8;
+}
+
+
+/* =========================================================
+   SKILLS NOTE
+========================================================= */
+
+.skills-section .skills-note {
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top:
+    40px;
+
+  padding-top:
+    22px;
+
+  border-top:
+    1px solid rgba(0, 0, 0, 0.12);
+
+  color:
+    #777777;
+
+  font-size:
+    13px;
+
+  line-height:
+    1.7;
+}
+
+
+.skills-section .skills-note > span {
+  flex-shrink:
+    0;
+
+  color:
+    #222222;
+
+  font-size:
+    18px;
+
+  font-weight:
+    700;
+}
+
+
+.skills-section .skills-note p {
+  margin:
+    0;
+}
+
+
+/* =========================================================
+   SMALL MOVING TECH PARTICLES
+========================================================= */
+
+.skills-section .skills-grid::before,
+.skills-section .skills-grid::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    4px;
+
+  height:
+    4px;
+
+  border-radius:
+    50%;
+
+  background:
+    #777777;
+
+  opacity:
+    0.35;
+
+  pointer-events:
+    none;
+
+  z-index:
+    20;
+}
+
+
+/* =========================================================
+   PARTICLE 1
+========================================================= */
+
+.skills-section .skills-grid::before {
+  top:
+    20px;
+
+  left:
+    10%;
+
+  box-shadow:
+
+    140px 70px 0 #888888,
+
+    300px 30px 0 #666666,
+
+    480px 130px 0 #999999,
+
+    620px 60px 0 #777777,
+
+    780px 180px 0 #888888;
+
+  animation:
+    particleFloatOne 8s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   PARTICLE 2
+========================================================= */
+
+.skills-section .skills-grid::after {
+  bottom:
+    30px;
+
+  right:
+    10%;
+
+  box-shadow:
+
+    -130px -80px 0 #999999,
+
+    -280px -30px 0 #777777,
+
+    -450px -120px 0 #888888,
+
+    -620px -50px 0 #666666;
+
+  animation:
+    particleFloatTwo 10s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   PARTICLE ANIMATION
+========================================================= */
+
+@keyframes particleFloatOne {
+
+  0% {
+    transform:
+      translate(0, 0);
+
+    opacity:
+      0.20;
+  }
+
+  50% {
+    opacity:
+      0.45;
+  }
+
+  100% {
+    transform:
+      translate(30px, 20px);
+
+    opacity:
+      0.25;
+  }
+
+}
+
+
+@keyframes particleFloatTwo {
+
+  0% {
+    transform:
+      translate(0, 0);
+
+    opacity:
+      0.20;
+  }
+
+  50% {
+    opacity:
+      0.45;
+  }
+
+  100% {
+    transform:
+      translate(-25px, -25px);
+
+    opacity:
+      0.25;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .skills-section .skills-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .skills-section::before {
+    background-size:
+      650px 400px;
+
+    animation-duration:
+      14s;
+
+    opacity:
+      0.45;
+  }
+
+
+  .skills-section::after {
+    width:
+      350px;
+
+    height:
+      350px;
+
+    right:
+      -180px;
+  }
+
+
+  .skills-section .skills-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .skills-section .skill-card {
+    min-height:
+      230px;
+
+    padding:
+      25px;
+  }
+
+
+  .skills-section .skill-item {
+    font-size:
+      15px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .skills-section .skill-card {
+    padding:
+      22px;
+  }
+
+
+  .skills-section .skill-item {
+    padding:
+      7px 38px 7px 7px;
+  }
+
+
+  .skills-section .skills-note {
+    font-size:
+      12px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .skills-section::before,
+  .skills-section::after,
+  .skills-section .skills-grid::before,
+  .skills-section .skills-grid::after {
+    animation:
+      none;
+  }
+
+
+  .skills-section .skill-card,
+  .skills-section .skill-item,
+  .skills-section .skill-icon,
+  .skills-section .skill-item span {
+    transition:
+      none;
+  }
+
+}

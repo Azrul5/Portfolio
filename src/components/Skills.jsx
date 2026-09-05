@@ -8,6 +8,7 @@ import {
   FaGitAlt,
   FaGithub,
   FaCode,
+  FaCloud,
 } from "react-icons/fa";
 
 import {
@@ -19,6 +20,9 @@ import {
   SiVercel,
   SiXampp,
 } from "react-icons/si";
+
+import "./Skills.css";
+
 
 const skills = [
   {
@@ -91,6 +95,11 @@ const skills = [
         icon: SiMongodb,
         color: "#47A248",
       },
+      {
+        name: "Aiven",
+        icon: FaCloud,
+        color: "#000000",
+      },
     ],
   },
 
@@ -126,19 +135,21 @@ const skills = [
   },
 ];
 
+
 function Skills() {
   return (
-    <section id="skills" className="section skills-section">
-
+    <section
+      id="skills"
+      className="section skills-section"
+    >
       <div className="section-container">
 
         <div className="section-heading">
 
-          <span className="section-number">
-            
-          </span>
+          <span className="section-number"></span>
 
           <div>
+
             <p className="section-label">
               TECHNICAL SKILLS
             </p>
@@ -146,13 +157,16 @@ function Skills() {
             <h2>
               Technologies I work with.
             </h2>
+
           </div>
 
         </div>
 
+
         <div className="skills-grid">
 
           {skills.map((skill) => (
+
             <div
               className="skill-card"
               key={skill.category}
@@ -162,6 +176,7 @@ function Skills() {
                 {skill.category}
               </p>
 
+
               <div className="skill-list">
 
                 {skill.technologies.map((technology) => {
@@ -169,6 +184,7 @@ function Skills() {
                   const Icon = technology.icon;
 
                   return (
+
                     <div
                       className="skill-item"
                       key={technology.name}
@@ -186,6 +202,7 @@ function Skills() {
                       </span>
 
                     </div>
+
                   );
 
                 })}
@@ -193,9 +210,11 @@ function Skills() {
               </div>
 
             </div>
+
           ))}
 
         </div>
+
 
         <div className="skills-note">
 
@@ -210,9 +229,9 @@ function Skills() {
         </div>
 
       </div>
-
     </section>
   );
 }
+
 
 export default Skills;
